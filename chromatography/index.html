@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
-    <h1>Chromatography</h1>
+    <h1>Chromatography Lab</h1>
 
   <script>
   	var FPS = 60;
@@ -26,7 +26,7 @@
 	}
 	
 	function NewSim() {
-		
+		document.getElementById("btn_replay").style.display = "block";
 		// generate new color parameters
 		color_obj_pure = generateColorObj();
 		
@@ -348,15 +348,15 @@
 <body>
 <p>
 <canvas id="myCanvas" width="400" height="600" style="border:1px solid #000000;"></canvas>
-
 <p>
-<button onclick="ReplaySim()"> Replay Same Simulation </button>
+<button onclick="NewSim()"> Start New Simulation </button>
+
+<button id=btn_replay onclick="ReplaySim()"> Replay Same Simulation </button>
 <button onclick="Pause()"> Toggle Pause </button>
 
 <button onclick="ToggleRuler()"> Toggle Ruler </button>
 
 <p>
-<button onclick="NewSim()"> Start New Simulation </button>
 
 
 <p>
@@ -373,8 +373,23 @@ table, th, td {
   text-align: center;
 }
 
-h1 {
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+#btn_replay {
+	display: none;
+}
+
+button {
+  font-size: 20px;
+}
+
+h1 {
+	
     font-size: 40px;
 }
 </style>
