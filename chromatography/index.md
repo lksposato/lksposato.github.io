@@ -1,7 +1,9 @@
+<!DOCTYPE HTML>
+<html>
 
   <script>
   	var FPS = 60;
-	setInterval(Animate_Chr,1000/FPS);
+	setInterval(Animate,1000/FPS);
 	var K_Value = Math.random() * 10 + 1;
 	var Function_Type = Math.random() * 3;
 	var Duration = 20000;
@@ -192,7 +194,7 @@
 	
 	var LastTime = -1;
 	var timer_counter = -1;
-	function AnimateChr() {
+	function Animate() {
 		
 		if (timer_counter < 0) {
 			return;
@@ -340,7 +342,7 @@
 		return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb | 0).toString(16).slice(1);
 	}
   </script>
-</chromatography_lab>
+
 <body>
 <p>
 <canvas id="myCanvas" width="400" height="600" style="border:1px solid #000000;"></canvas>
@@ -369,4 +371,5 @@ table, th, td {
   text-align: center;
 }
 </style>
-</chromatography_lab>
+
+</html>
