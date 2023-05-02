@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+    <h1>Chromatography Lab</h1>
+
+  <script src="script.js">
+  </script>
+
+<body>
+<p>
+<canvas id="myCanvas" width="400" height="600" style="border:1px solid #000000;"></canvas>
+<p>
+<button onclick="NewSim()"> Start New Simulation </button>
+
+<button id=btn_replay onclick="ReplaySim()"> Replay Same Simulation </button>
+<button onclick="Pause()"> Toggle Pause </button>
+
+<button onclick="ToggleRuler()"> Toggle Ruler </button>
+
+<p>
+
+
+<p>
+
+
+<p>
+<text id="debuglog"> </text>
+
+</body>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #282c34;
+  color: white;
+  font-size: 30px;
+    text-align: center;
+}
+
+#btn_replay {
+	display: none;
+}
+
+button {
+  font-size: 20px;
+}
+
+h1 {
+	
+    font-size: 40px;
+}
+</style>
+
+</html>
