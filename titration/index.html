@@ -1,32 +1,14 @@
-<!DOCTYPE HTML>
 <html>
-
+  <head>  
+  </head>
     <h1>Titration Lab</h1>
+    <body>
+      <div class="dropzone">Drop image here</div>
+      <img id="dragimage" height="200px" src="sam.jpg" draggable="true"/>  
+      <text id="debuglog"> text </text>
 
-  <script src="script.js">
-  </script>
-
-<body>
-<p>
-<canvas id="myCanvas" width="400" height="600" style="border:1px solid #000000;"></canvas>
-<p>
-<button onclick="NewSim()"> Start New Simulation </button>
-
-<button id=btn_replay onclick="ReplaySim()"> Replay Same Simulation </button>
-<button onclick="Pause()"> Toggle Pause </button>
-
-<button onclick="ToggleRuler()"> Toggle Ruler </button>
-
-<p>
-
-
-<p>
-
-
-<p>
-<text id="debuglog"> </text>
-
-</body>
+      <script src='script.js'></script>
+  </body>
 
 <style>
 table, th, td {
@@ -44,17 +26,10 @@ body {
     text-align: center;
 }
 
-#btn_replay {
-	display: none;
-}
-
-button {
-  font-size: 20px;
-}
-
-h1 {
-	
-    font-size: 40px;
+.dropzone {
+  background-color: white;
+  width: 200px;
+  height:200px;
 }
 </style>
 
