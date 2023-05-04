@@ -50,6 +50,7 @@ draggables.forEach(function(element) {
 	element.addEventListener('mouseleave', mouseleave)
 	element.addEventListener('dragstart', dragstart)
 	element.style.width = IMAGE_SIZE
+	element.style.borderRadius = '20px'
 })
 
 var dropzones = Array.from(document.getElementsByClassName('dropzone'))
