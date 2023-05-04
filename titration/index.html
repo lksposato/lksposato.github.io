@@ -3,10 +3,12 @@
   </head>
     <h1>Titration Lab</h1>
     <body>
-      <div class="dropzone" draggable="false"></div>
-      <p></p>
-      <div class="dropzone" draggable="false"></div>
-      <p></p>
+      <div id="dropzones_row">
+        <div class="dropzone" draggable="false"></div>
+        <p></p>
+        <div class="dropzone" draggable="false"></div>
+        <p></p>
+      </div>
       <div class="dropzone" draggable="false">
         <img id="dragimage" height="200px" src="sam.jpg" draggable="true"/>
       </div>
@@ -40,7 +42,6 @@ body {
 }
 
 .dropzone {
-  background-color: white;
   width: 200px;
   height:200px;
 }
