@@ -25,8 +25,7 @@ function dragexit(e) {
 }
 
 function dragover(e) {
-	console.log(e.target.style);
-	if (e.target.childElementCount == 0) {
+	if (e.target.childElementCount == 0 && drag_source != null) {
 		e.target.style.backgroundColor = HOVER_COLOR;
 	}
 	e.preventDefault();
@@ -34,7 +33,7 @@ function dragover(e) {
 
 function dragdrop(e) {
 	e.preventDefault();
-	if (e.target.className == "dropzone") {
+	if (e.target.className == "dropzone" && drag_source != null) {
 		e.target.style.backgroundColor = DROPZONE_COLOR;
 		if (e.target.childElementCount == 0) {
 			e.target.appendChild(drag_source)
