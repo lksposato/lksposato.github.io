@@ -12,12 +12,10 @@ function mouseover(event) {
 }
 
 function mouseleave(event) {
-	console.log("mouse leave")
 	event.target.style.width = IMAGE_SIZE
 }
 
 function dragstart(event) {
-	console.log("drag start", event.target)
 	drag_source = event.target;
 }
 
@@ -41,7 +39,8 @@ function dragdrop(e) {
 		if (e.target.childElementCount == 0) {
 			e.target.appendChild(drag_source)
 		}
-	}	
+	}
+	drag_source = null	
 }
 
 var draggables = document.querySelectorAll('[draggable="true"]');
