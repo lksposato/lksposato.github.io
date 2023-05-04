@@ -1,0 +1,32 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background-color: #282c34;
+    color: white;
+    font-size: 30px;
+      text-align: center;
+  }
+  
+  .dropzone_row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dropzone {
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .draggable {
+    height: auto;
+    cursor: pointer;
+  }
