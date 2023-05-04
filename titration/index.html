@@ -1,50 +1,30 @@
 <html>
-  <head>  
+  <head>
+    <link rel="stylesheet" href="style.css"> 
   </head>
     <h1>Titration Lab</h1>
     <body>
-      <div id="dropzones_row">
+      <div class="dropzone_row">
         <div class="dropzone" draggable="false"></div>
-        <p></p>
         <div class="dropzone" draggable="false"></div>
-        <p></p>
       </div>
-      <div class="dropzone" draggable="false">
-        <img id="dragimage" height="200px" src="sam.jpg" draggable="true"/>
-      </div>
-      <div class="dropzone" draggable="false">
-        <img id="dragimage2" height="200px" src="sam.jpg" draggable="true"/>
-      </div>
-      <div class="dropzone" draggable="false">
-        <img id="dragimage3" height="200px" src="sam.jpg" draggable="true"/>
-      </div>
-      
+      <div class="dropzone_row">
+        <div class="dropzone" draggable="false">
+          <img class="draggable" id="dragimage" height="200px" src="sam.jpg" draggable="true"/>
+        </div>
+        <div class="dropzone" draggable="false">
+          <img class="draggable" id="dragimage2" height="200px" src="sam.jpg" draggable="true"/>
+        </div>
+        <div class="dropzone" draggable="false">
+          <img class="draggable" id="dragimage3" height="200px" src="sam.jpg" draggable="true"/>
+        </div>
+      </div>      
       <p></p>
       <text id="debuglog"> </text>
 
       <script src='script.js'></script>
   </body>
 
-<style>
-table, th, td {
-  border: 1px solid black;
-  text-align: center;
-}
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  background-color: #282c34;
-  color: white;
-  font-size: 30px;
-    text-align: center;
-}
-
-.dropzone {
-  width: 200px;
-  height:200px;
-}
-</style>
 
 </html>
